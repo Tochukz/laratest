@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('relationship');
 });
+
+Route::get('relationship/parent-child', 'RelationShipController@parentChild')->name('parent-child');
+Route::get('relationship/child-parent', 'RelationShipController@childParent')->name('child-parent');
+Route::get('relationship/one-to-many', 'RelationShipController@oneToMany')->name('one-to-many');
+Route::get('relationship/many-to-one', 'RelationShipController@manyToOne')->name('many-to-one');
+Route::get('relationship/users-to-roles', 'RelationShipController@usersToRoles')->name('users-to-roles');
+Route::get('relationship/roles-to-users', 'RelationShipController@rolesToUsers')->name('roles-to-users');
