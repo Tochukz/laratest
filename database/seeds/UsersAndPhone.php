@@ -34,7 +34,7 @@ class UsersAndPhone extends Seeder
                     ],
                 ];
        foreach($users as $user){
-           \DB::table('users')->insert($users);
+           \DB::table('users')->insert($user);
        }
 
        $phones  = [

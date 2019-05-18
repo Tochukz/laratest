@@ -8,7 +8,8 @@ class Phone extends Model
 {
     public function user(){
         //return $this->belongTo('App]\Models\User', 'foreign_key', 'local_key');
-        /* Fllowing convention where foreign key is user_id */
-        return $this->belongsTo('App\Models\User'); 
+
+        /* Following convention where foreign key is user_id and local key is id */
+        return $this->belongsTo('App\Models\User');
     }
 }

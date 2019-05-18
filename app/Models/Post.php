@@ -11,7 +11,7 @@ class Post extends Model
         //Following laravel convention
         return $this->hasMany('App\Models\Comment');
 
-        //Not follewing laravel convention
+        //Not following laravel convention
         //return $this->hasMany('App\Models\Comment', 'foreign_key', 'local_key');
 
     }
